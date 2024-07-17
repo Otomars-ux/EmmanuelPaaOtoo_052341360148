@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="MY_RESTURANT.css">
+    <script src="MY_RET_SCR.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Order Your Meal</h1>
+        <nav>
+            <ul>
+                <li><a href="HOME_PAGE.html">Home</a></li>
+                <li><a href="BREAKFAST.html">Breakfast</a></li>
+                <li><a href="Lunch.html">Lunch</a></li>
+                <li><a href="Supper.html">Supper</a></li>
+                <li><a href="ODER_PAGE.html">Order</a></li>
+                <li><a href="shopping_chart.html">Shopping Cart</a></li>
+                <li><a href="CO">Contact Us</a></li>
+                <li><a href="About_Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Select Your Meal</h2>
+        <form id="orderForm">
+            <label for="meal">Meal:</label>
+            <select id="meal" name="meal">
+                <!-- Add meal options dynamically with JavaScript -->
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br>
+            <button type="button" onclick="addToCart()">Add to Cart</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
